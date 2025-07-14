@@ -18,9 +18,9 @@ function Footer() {
             <li>
               <a href="#portfolio" className="footer__link">Portfolio</a>
             </li>
-            {/* Removed Contact-Me link */}
+            
           </ul>
-          {/* Contact Info Block */}
+         
           <div className="footer__contact">
             <div className="contact__information">
               <i className="uil uil-calling contact__icon"></i>
