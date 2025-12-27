@@ -9,6 +9,8 @@ import ScrollUp from "./components/ScrollUp";
 import "./App.css";
 import Portfolio from "./components/Portfolio";
 import WorkExperience from "./components/WorkExperience";
+// Import the new component
+import ExtraCurricular from "./components/ExtraCurricular"; 
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(
@@ -28,10 +30,9 @@ function App() {
         <About />
         <WorkExperience/>
         <Skills />
-        <Qualification />
         <Portfolio/>
-        
-        
+        <ExtraCurricular /> {/* Added here */}
+        <Qualification />
       </main>
       <Footer />
       <ScrollUp />
@@ -40,5 +41,3 @@ function App() {
 }
 
 export default App;
-
-

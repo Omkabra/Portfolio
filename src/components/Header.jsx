@@ -7,7 +7,8 @@ const navLinks = [
   { href: "#skills", icon: "uil-file-alt", label: "Skills" },
   { href: "#qualification", icon: "uil-briefcase-alt", label: "Qualification" },
   { href: "#portfolio", icon: "uil-scenery", label: "Projects" },
-  
+  // Added Extra Curricular link here
+  { href: "#extra-curricular", icon: "uil-trophy", label: "Activities" },
 ];
 
 function Header({ darkTheme, setDarkTheme }) {

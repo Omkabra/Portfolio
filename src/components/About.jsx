@@ -23,7 +23,7 @@ function About() {
               <span className="about__info-name">Projects</span>
             </div>
             <div>
-              <span className="about__info-title">01+</span>
+              <span className="about__info-title">07+</span>
               <span className="about__info-name">Months <br />experience</span>
             </div>
           </div>

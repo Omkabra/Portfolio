@@ -2,17 +2,27 @@ import React from "react";
 
 const experiences = [
   {
-    position: "Intern",
-    company: "Bellurbis Tech Pvt. Ltd.",
-    period: "May 2024 - July 2024",
-    location: "Remote",
+    position: "Full Stack Intern",
+    company: "NetNet Fintech Pvt Ltd",
+    period: "Jul 2025 - Dec 2025",
+    location: "Bengaluru",
     details: [
-      "Developed responsive web interfaces using React, JavaScript, and CSS.",
-      "Collaborated with backend team to integrate REST APIs.",
-      "Made Rudhira from Scratch."
+      "Migrated Quartr API from V1 to V3 and redesigned webhook workflows, reducing ingestion errors by ~90%.",
+      "Built the AlphaPro.ai Blog Platform using Next.js & Sanity CMS, boosting content publishing speed by 40%.",
+      "Developed an AI-driven transcript analysis pipeline and shipped major product pages (Overview, EPS vs Guidance), increasing user interaction by ~30%.",
+      "Built automated trading workflows using n8n for rule-based trade execution."
     ]
   },
-  // Add more experiences as needed
+  {
+    position: "SDE Intern",
+    company: "Bellurbis Technologies",
+    period: "May 2024 - Jul 2024",
+    location: "Remote",
+    details: [
+      "Contributed to Rudhira, a blood donation platform, focusing on real-time donor-request matching.",
+      "Collaborated with design teams using Figma to translate business requirements into UI/UX components."
+    ]
+  },
 ];
 
 function WorkExperience() {
