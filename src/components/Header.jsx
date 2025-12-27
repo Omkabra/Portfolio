@@ -7,7 +7,6 @@ const navLinks = [
   { href: "#skills", icon: "uil-file-alt", label: "Skills" },
   { href: "#qualification", icon: "uil-briefcase-alt", label: "Qualification" },
   { href: "#portfolio", icon: "uil-scenery", label: "Projects" },
-  // Added Extra Curricular link here
   { href: "#extra-curricular", icon: "uil-trophy", label: "Activities" },
 ];
 
@@ -27,7 +26,10 @@ function Header({ darkTheme, setDarkTheme }) {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <a href="#" className="nav__logo">Om</a>
+
+        {/* FIXED: changed href="#" → href="#home" */}
+        <a href="#home" className="nav__logo">Om</a>
+
         <div className={`nav__menu${showMenu ? " show-menu" : ""}`} id="nav-menu">
           <ul className="nav__list grid">
             {navLinks.map(link => (
@@ -43,16 +45,26 @@ function Header({ darkTheme, setDarkTheme }) {
               </li>
             ))}
           </ul>
-          <i className="uil uil-times nav__close" id="nav-close" onClick={() => setShowMenu(false)}></i>
+          <i
+            className="uil uil-times nav__close"
+            id="nav-close"
+            onClick={() => setShowMenu(false)}
+          ></i>
         </div>
+
         <div className="nav__btns">
           <i
             className={`uil ${darkTheme ? "uil-sun" : "uil-moon"} change-theme`}
             id="theme-button"
-            onClick={() => setDarkTheme((v) => !v)}
+            onClick={() => setDarkTheme(v => !v)}
             title="Toggle theme"
           ></i>
-          <div className="nav__toggle" id="nav-toggle" onClick={() => setShowMenu(true)}>
+
+          <div
+            className="nav__toggle"
+            id="nav-toggle"
+            onClick={() => setShowMenu(true)}
+          >
             <i className="uil uil-apps"></i>
           </div>
         </div>
